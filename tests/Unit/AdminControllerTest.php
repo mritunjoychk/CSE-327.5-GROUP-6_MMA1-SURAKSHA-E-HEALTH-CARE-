@@ -10,13 +10,15 @@ class AdminControllerTest extends TestCase
 {
     use RefreshDatabase;
     public function test_the_admin_can_view_appointment_page_rendered_properly()
+       
     {
-          $admin = Admin::factory()->create();
+         $admin = Admin::factory()->create();
         $response = $this->get(url:'/appointments');
         $response->assertStatus(status:200);
     }
  function test_admin_can_approve_appointments()
     {
+      /*This function is created to Test the unit to check if the admin can show appointment list or not  */
           $admin = User::factory()->create();
           $this->actingAs($admin);
         $response = $this->post(url:'/appointments', data;['name'=>'Shifa','phone'=>'6564413','speciality'=>'Urology','room'=>'45','date'=>'12-2-2021']);
