@@ -22,7 +22,6 @@
 </head>
 <body>
 
-  <!-- Back to top button -->
   <div class="back-to-top"></div>
 
   <header>
@@ -90,6 +89,9 @@
       </div> <!-- .container -->
     </nav>
   </header>
+
+  /* This table is created for showing the appointment list of user 
+  */
 
              <div align="center" style="padding:70px">
                     <table>

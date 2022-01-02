@@ -1,3 +1,5 @@
+/* This Class is created for the lastet update style sheet for homepage and  userdash board 
+  */
 <div class="page-section bg-light">
     <div class="container">
       <h1 class="text-center wow fadeInUp">Latest News</h1>
