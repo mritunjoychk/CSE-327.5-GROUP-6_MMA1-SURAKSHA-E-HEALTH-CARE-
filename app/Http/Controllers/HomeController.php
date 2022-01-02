@@ -10,9 +10,18 @@ use App\Models\User;
 use App\Models\Doctor;
 use App\Models\Appointment;
 
-class HomeController extends Controller
+ class HomeController extends Controller
 {
     public function redirect()
+
+    /*This method is used to login a user.
+    :param request: it's a HttpResponse from user.
+    :type request: HttpResponse.
+    :return: this method returns a home page
+     which is a HTML page.
+    :rtype: HttpResponse.
+    */
+    
    {
        if(Auth::id())
        {
@@ -32,6 +41,16 @@ class HomeController extends Controller
        }
    }
    public function index()
+   /*
+    This method is used to display home page.
+
+    :param request: it's a HttpResponse from user.
+
+    :type request: HttpResponse.
+
+    :return: this method returns a home page which is a HTML page.
+    :rtype: HttpResponse.
+    */
        {
 
         if(Auth::id())
@@ -46,6 +65,12 @@ class HomeController extends Controller
        }
 
        public function appointment (Request $request)
+    /*This method is used to make appointment for registered users.
+    :param request: it's a HttpResponse from user.
+    :type request: HttpResponse.
+    :return: this method returns to the userdashboard page after successfull submission.
+    :rtype: HttpResponse.
+    */
        {
         $data = new appointment;
            if(Auth::id())
@@ -60,10 +85,17 @@ class HomeController extends Controller
             $data->user_id=Auth::user()->id;
            }
             $data->save();
-            
-            return redirect()->back()->with('message','Your appointment request is successfully sent to the authority.We will contact with you soon!Wear Musk,Stay Safe!');   
+
+            return redirect()->back()->with('message','Your appointment request is successfully sent to the authority.We will contact with you soon!Wear Musk,Stay Safe!');
        }
        public function myappointment (Request $request)
+    /*
+    This method is used to view the appointment taken by a registered users.
+    :param request: it's a HttpResponse from user.
+    :type request: HttpResponse.
+    :return: this method returns to the myappointment page .
+    :rtype: HttpResponse.
+    */
        {
            if(Auth::id())
            {
@@ -77,12 +109,19 @@ class HomeController extends Controller
            }
        }
        public function cancel_appoint($id)
+    /*
+     This method is used to cancel the appointment that was requested by a registered users.
+    :param request: it's a HttpResponse from user.
+    :type request: HttpResponse.
+    :return: this method returns to the userdashboard page after successfull
+    registration.
+    :rtype: HttpResponse.
+    */
        {
             $data=appointment::find($id);
-            
+
             $data->delete();
-             
+
             return redirect()->back();
        }
-
 }
