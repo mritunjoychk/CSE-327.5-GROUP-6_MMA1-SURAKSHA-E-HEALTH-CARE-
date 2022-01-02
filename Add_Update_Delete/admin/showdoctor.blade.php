@@ -31,8 +31,11 @@
 
         <div align="center" style="padding-top:100px">
 
+        /** This table is used to show the doctor list information from admin side. 
+              
+              */
 
-        <table>
+                        <table>
                             <tr style="background-color:#4F091D" align="center">
                                 <th style="padding:10px; font-size:15px; color:white">ID</th>
                                 <th style="padding:10px; font-size:15px; color:white">Doctor Name</th>

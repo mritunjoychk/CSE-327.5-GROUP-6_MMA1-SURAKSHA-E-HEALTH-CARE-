@@ -45,6 +45,8 @@
             <div class="container" align="center" style="padding-top: 100px;">
 
 
+/** If session is true then it will give a messeage */
+
             @if(session()->has('message'))
 
               <div class="alert alert-success"> 
@@ -55,6 +57,11 @@
             {{session()->get('message')}}
             </div>
              @endif
+
+             /** The form connected with AdminController and
+                through this form information can be added 
+              */
+
                 <form action="{{url('upload_doctor')}}" method="POST" enctype="multipart/form-data">
 
                 @csrf

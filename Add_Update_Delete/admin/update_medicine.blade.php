@@ -40,6 +40,10 @@
         <div class="container-fluid page-body-wrapper">
 
 <div class="container align="center" style="padding:100px">
+
+
+/** If session is true then it will give a messeage */
+
 @if(session()->has('message'))
 
               <div class="alert alert-success"> 
@@ -50,6 +54,11 @@
             {{session()->get('message')}}
             </div>
              @endif
+
+             /** The form connected with AdminController and
+                through this form information can be updated 
+              */
+              
 <form action="{{url('editmedicine',$data->id)}}"method="POST" enctype="multipart/form-data">
             @csrf
 <div style="padding:15px;">
