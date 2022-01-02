@@ -24,8 +24,10 @@
       @include('admin.sidebar')
       <!-- partial -->
       @include('admin.navbar')
-
+      
       <div class="container-fluid page-body-wrapper">
+      /* This div class is created to show the appointment list from the registered user 
+  */
 
       <div align="center" style="padding-top:100px">
                     <table>
