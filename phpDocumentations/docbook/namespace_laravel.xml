@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_laravel" xml:lang="en-US">
+<title>Laravel Namespace Reference</title>
+<indexterm><primary>Laravel</primary></indexterm>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_laravel">Laravel</link> - A PHP Framework For Web Artisans</para>
+
+<para><formalpara><title>Author</title>
+
+<para>Taylor Otwell <link xlink:href="mailto:taylor@laravel.com">taylor@laravel.com</link> </para>
+</formalpara>
+</para>
+</section>
+</section>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_server_8php" xml:lang="en-US">
+<title>server.php File Reference</title>
+<indexterm><primary>server.php</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_laravel">Laravel</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_server_8php_1a653b5458163d338546c47271b4fb81b7">$uri</link></para>
+</listitem>
+            <listitem><para><link linkend="_server_8php_1afc8b25b448fd1a3d79f6171af75f39ff">if</link> ( $uri !==&apos;/&apos; &amp;&amp;file_exists(__DIR__.&apos;/public&apos;. $uri))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_server_8php_1a653b5458163d338546c47271b4fb81b7"/><section>
+    <title>$uri</title>
+<indexterm><primary>$uri</primary><secondary>server.php</secondary></indexterm>
+<indexterm><primary>server.php</primary><secondary>$uri</secondary></indexterm>
+<para><computeroutput>$uri</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;urldecode(
+&#32;&#32;&#32;&#32;parse_url($_SERVER[<emphasis role="stringliteral">&apos;REQUEST_URI&apos;</emphasis>],&#32;PHP_URL_PATH)
+)
+</programlisting></section>
+<anchor xml:id="_server_8php_1afc8b25b448fd1a3d79f6171af75f39ff"/><section>
+    <title>if</title>
+<indexterm><primary>if</primary><secondary>server.php</secondary></indexterm>
+<indexterm><primary>server.php</primary><secondary>if</secondary></indexterm>
+<para><computeroutput>if($uri !==&apos;/&apos; &amp;&amp;file_exists(__DIR__.&apos;/public&apos;. $uri)) ( $uri ! = <computeroutput>= &apos;/&apos; &amp;&amp; file_exists(__DIR__.&apos;/public&apos;.$uri)</computeroutput>
+)</computeroutput></para></section>
+</section>
+</section>
